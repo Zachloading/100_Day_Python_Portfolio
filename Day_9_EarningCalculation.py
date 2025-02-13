@@ -11,5 +11,11 @@ RPH = eval(input("Enter rate per hour: "))
 Earnings = RPH * hours
 #function
 print("Hello,", name)
-print("You have earned:$",Earnings)
+#check for illegal wage
+if RPH < 15:
+    print("That is an illegal wage!")
+else:
+    print("You have earned:$",Earnings)
+
+
 print("Have a nice day!")
